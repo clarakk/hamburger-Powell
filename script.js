@@ -1,4 +1,4 @@
-      const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu-toggle');
 const siteNavigation = document.querySelector('.primary-navigation');
 
 menuToggle.addEventListener('click', () => {
