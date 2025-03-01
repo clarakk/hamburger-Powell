@@ -22,7 +22,7 @@ header {
     rgba(3, 109, 131, 0.983) 80%
   );
   color: #ebebd3;
-  padding: 1em 0;
+  padding: 1em  0;
   position: relative;
 }
 
@@ -32,13 +32,14 @@ header::after {
   display: block;
 }
 
-.logo {
-  float: left;
-  font-size: 1rem;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-}
+.logo_img {  
+       width: 3rem; /* Modifica questa dimensione in base alle tue esigenze */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    display: block; /* Rimuove eventuali spazi indesiderati attorno all'immagine */
+    /* margin-top: -1em; */
+  }
+  
+
 
 .logo span {
   font-weight: 400;
@@ -131,7 +132,7 @@ header::after {
   background: transparent;
   border: 0;
   position: absolute;
-  top: 0.5em;
+  top: 1.2em;
   right: 0.5em;
   cursor: pointer;
 }
