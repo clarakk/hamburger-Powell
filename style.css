@@ -128,9 +128,6 @@ header::after {
 }
 
 
-
-
-
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -138,7 +135,7 @@ header::after {
   display: block;
   background: #ebebd3;
   height: 3px;
-  width: 1.75em;
+    width: 1.75em;
   border-radius: 3px;
   transition: all ease-in-out 500ms;
 }
