@@ -22,7 +22,7 @@ header {
     rgba(3, 109, 131, 0.983) 80%
   );
   color: #ebebd3;
-  padding: 1em  0;
+  padding: 1em 0;
   position: relative;
 }
 
@@ -32,17 +32,11 @@ header::after {
   display: block;
 }
 
-.logo_img {  
-       width: 3rem; /* Modifica questa dimensione in base alle tue esigenze */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
-    display: block; /* Rimuove eventuali spazi indesiderati attorno all'immagine */
-    /* margin-top: -1em; */
-  }
-  
-
-
-.logo span {
-  font-weight: 400;
+.logo_img {
+  width: 3rem; /* Modifica questa dimensione in base alle tue esigenze */
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+  display: block; /* Rimuove eventuali spazi indesiderati attorno all'immagine */
+  /* margin-top: -1em; */
 }
 
 .primary-navigation {
@@ -59,34 +53,58 @@ header::after {
 }
 .primary-navigation[data-state="opened"] {
   -webkit-animation: clipPathCircleOpen 750ms ease-in-out forwards;
-          animation: clipPathCircleOpen 750ms ease-in-out forwards;
+  animation: clipPathCircleOpen 750ms ease-in-out forwards;
   display: block;
 }
 
 .primary-navigation[data-state="closing"] {
   -webkit-animation: clipPathCircleClose 750ms ease-in-out forwards;
-          animation: clipPathCircleClose 750ms ease-in-out forwards;
+  animation: clipPathCircleClose 750ms ease-in-out forwards;
 }
 .primary-navigation[data-state="closed"] {
   display: none;
 }
 
 @-webkit-keyframes clipPathCircleOpen {
-  0% { -webkit-clip-path: circle(0% at top right); clip-path: circle(0% at top right); }
-  100% { -webkit-clip-path: circle(250% at top right); clip-path: circle(250% at top right); }
+  0% {
+    -webkit-clip-path: circle(0% at top right);
+    clip-path: circle(0% at top right);
+  }
+  100% {
+    -webkit-clip-path: circle(250% at top right);
+    clip-path: circle(250% at top right);
+  }
 }
 
 @keyframes clipPathCircleOpen {
-  0% { -webkit-clip-path: circle(0% at top right); clip-path: circle(0% at top right); }
-  100% { -webkit-clip-path: circle(250% at top right); clip-path: circle(250% at top right); }
+  0% {
+    -webkit-clip-path: circle(0% at top right);
+    clip-path: circle(0% at top right);
+  }
+  100% {
+    -webkit-clip-path: circle(250% at top right);
+    clip-path: circle(250% at top right);
+  }
 }
 @-webkit-keyframes clipPathCircleClose {
-  0% { -webkit-clip-path: circle(250% at top right); clip-path: circle(250% at top right); }
-  100% { -webkit-clip-path: circle(0% at top right); clip-path: circle(0% at top right); }
+  0% {
+    -webkit-clip-path: circle(250% at top right);
+    clip-path: circle(250% at top right);
+  }
+  100% {
+    -webkit-clip-path: circle(0% at top right);
+    clip-path: circle(0% at top right);
+  }
 }
 @keyframes clipPathCircleClose {
-  0% { -webkit-clip-path: circle(250% at top right); clip-path: circle(250% at top right); }
-  100% { -webkit-clip-path: circle(0% at top right); clip-path: circle(0% at top right); }
+  0% {
+    -webkit-clip-path: circle(250% at top right);
+    clip-path: circle(250% at top right);
+  }
+  100% {
+    -webkit-clip-path: circle(0% at top right);
+    clip-path: circle(0% at top right);
+  }
 }
 
 .site-nav li {
@@ -117,7 +135,6 @@ header::after {
   color: #464655; /* Colore scuro per l'icona */
 }
 
-
 .site-nav--icon {
   display: inline-block;
   font-size: 1.5em;
@@ -141,7 +158,6 @@ header::after {
   outline: 4px solid #e4b363;
 }
 
-
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -149,10 +165,10 @@ header::after {
   display: block;
   background: #ebebd3;
   height: 3px;
-    width: 1.75em;
+  width: 1.75em;
   border-radius: 3px;
   transition: all ease-in-out 500ms;
-}
+ }
 
 .hamburger::before {
   transform: translateY(-6px);
@@ -177,7 +193,7 @@ header::after {
 .visually-hidden {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
